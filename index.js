@@ -10,5 +10,5 @@ const server = new ApolloServer({ typeDefs, resolvers });
 server.applyMiddleware({ app });
 
 app.listen({ port: 4000 }, () => {
-  console.log("Server running on port 4000");
+  console.log(`Server running at ${"http://localhost:4000/graphql"}`);
 });
